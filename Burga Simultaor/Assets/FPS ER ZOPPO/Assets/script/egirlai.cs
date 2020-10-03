@@ -21,6 +21,7 @@ public class egirlai : MonoBehaviour
 	public LayerMask groundMask;
 	bool isGrounded;
 	Vector3 velocity;
+	public int gravitydivider = 40;
     // Start is called before the first frame update
 	
 	void Start(){
@@ -58,7 +59,7 @@ public class egirlai : MonoBehaviour
 		
 		
 		
-		move.y += gravity/40* Time.deltaTime;
+		move.y +=  ((gravity/gravitydivider) * Time.deltaTime);
 		
 		
     }

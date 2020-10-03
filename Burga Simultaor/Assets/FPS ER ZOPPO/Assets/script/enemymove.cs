@@ -7,9 +7,13 @@ public class enemymove : MonoBehaviour
    public float speed;
    private Transform target;
    public int davide;
+   public GameObject bullet;
+   public Transform bulletpos;
+   
  // Use this for initialization
  void Start () {
      target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+	  StartCoroutine(ExampleCoroutine());
  	}
  
  // Update is called once per frame
@@ -26,4 +30,15 @@ public class enemymove : MonoBehaviour
     // Update is called once per frame
     
  }
+ 
+ 	 IEnumerator ExampleCoroutine()
+    {
+     	if(davide==1){
+			Instantiate(bullet,bulletpos.position, bulletpos.rotation);
+			 yield return new WaitForSeconds(2);
+		}
+    }
+ 
+ 
+ 
 }
