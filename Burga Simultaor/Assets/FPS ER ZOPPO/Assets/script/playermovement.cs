@@ -9,6 +9,7 @@ public class playermovement : MonoBehaviour
 
 	public CharacterController controller;
 	public float speed = 12f;
+	public string gunType;
 	
 	public GameObject bullet;
 	public Transform bulletpos;
@@ -43,7 +44,7 @@ public class playermovement : MonoBehaviour
 		
 		
 		//salto && isGrounded
-		if(Input.GetKeyDown(KeyCode.Space) ){
+		if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
 			
 			
 			velocity.y = Mathf.Sqrt(jumpHeight* -2f * gravity);
