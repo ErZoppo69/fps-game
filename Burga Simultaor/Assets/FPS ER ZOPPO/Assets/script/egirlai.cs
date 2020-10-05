@@ -9,7 +9,7 @@ public class egirlai : MonoBehaviour
 
 	public CharacterController egirl;
 	public float speed = 10f;
-	public Transform Move;
+	public GameObject Move;
 	public Transform pos;
 	public float shootSpeed = 300f;
 	public float x = 0.01f;
@@ -25,6 +25,8 @@ public class egirlai : MonoBehaviour
     // Start is called before the first frame update
 	
 	void Start(){
+		Move = GameObject.FindWithTag("spawn");
+		pos = Move.GetComponent<Transform>();
 		 move = pos.forward;
 		StartCoroutine(ExampleCoroutine());
 		
@@ -68,7 +70,7 @@ public class egirlai : MonoBehaviour
 		while(true){
 			
 			
-			 yield return new WaitForSeconds(4);
+			 yield return new WaitForSeconds(5);
 			  Destroy(gameObject);
 			
 			

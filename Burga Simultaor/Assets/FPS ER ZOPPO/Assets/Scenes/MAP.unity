@@ -11342,6 +11342,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 825858723791039755, guid: 4b711a646b9cd07449cc08bc20cd5fd3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825858723791039755, guid: 4b711a646b9cd07449cc08bc20cd5fd3,
+        type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 825858723791039756, guid: 4b711a646b9cd07449cc08bc20cd5fd3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 866841517649585376, guid: 4b711a646b9cd07449cc08bc20cd5fd3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29150,6 +29165,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 985090378255652397, guid: 59c09a8dbd225dc4abfe3e67958b2449,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494489419529078345, guid: 59c09a8dbd225dc4abfe3e67958b2449,
+        type: 3}
+      propertyPath: m_TagString
+      value: spawn
+      objectReference: {fileID: 0}
     - target: {fileID: 2494489419554846888, guid: 59c09a8dbd225dc4abfe3e67958b2449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57470,6 +57495,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9053102716360390795, guid: 4a0e65852ab42514e8f78ed80c167351,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9053102716360390796, guid: 4a0e65852ab42514e8f78ed80c167351,
+        type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a0e65852ab42514e8f78ed80c167351, type: 3}

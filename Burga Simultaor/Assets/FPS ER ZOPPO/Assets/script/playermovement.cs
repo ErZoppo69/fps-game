@@ -8,7 +8,7 @@ public class playermovement : MonoBehaviour
 
 
 	public CharacterController controller;
-	public float speed = 12f;
+	public float speed = 100f;
 	public string gunType;
 	
 	public GameObject bullet;
