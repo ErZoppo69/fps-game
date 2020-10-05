@@ -26,7 +26,7 @@ public class egirlai : MonoBehaviour
 	
 	void Start(){
 		 move = pos.forward;
-		
+		StartCoroutine(ExampleCoroutine());
 		
 	}
     // Update is called once per frame
@@ -63,4 +63,17 @@ public class egirlai : MonoBehaviour
 		
 		
     }
+		 IEnumerator ExampleCoroutine()
+    {
+		while(true){
+			
+			
+			 yield return new WaitForSeconds(4);
+			  Destroy(gameObject);
+			
+			
+		}
+	
+	}
+	
 }

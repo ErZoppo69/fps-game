@@ -59,6 +59,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -70,6 +71,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -109,8 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   egirl: {fileID: 791537237915777682}
   speed: 12
-  Move: {fileID: 0}
-  pos: {fileID: 0}
+  Move: {fileID: 2494489419554846888, guid: 59c09a8dbd225dc4abfe3e67958b2449, type: 3}
+  pos: {fileID: 2494489419554846888, guid: 59c09a8dbd225dc4abfe3e67958b2449, type: 3}
   shootSpeed: 300
   x: 0.01
   z: 0.01
@@ -121,6 +123,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 0
+  gravitydivider: 40
 --- !u!143 &791537237915777682
 CharacterController:
   m_ObjectHideFlags: 0

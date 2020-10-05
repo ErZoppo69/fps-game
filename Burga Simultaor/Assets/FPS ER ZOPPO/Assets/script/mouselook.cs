@@ -7,8 +7,13 @@ public class mouselook : MonoBehaviour
 
 	public float mouseSensitivity = 100f;
 	
+	
+	public Joystick joystick;
 	public Transform playerBody;
 	public Transform gunBody;
+	private bool touchStart = false;
+	private Vector2 pointa;
+	private Vector2 pointb;
 	
 	float xRotation = 0f;
     // Start is called before the first frame update
@@ -20,9 +25,11 @@ public class mouselook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-		float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseX = joystick.Horizontal *mouseSensitivity * Time.deltaTime;
+		float mouseY = joystick.Vertical * mouseSensitivity * Time.deltaTime;
 		
+		//Input.GetAxis("Mouse X");
+		//Input.GetAxis("Mouse Y");
 		
 		xRotation -=  mouseY;
 		xRotation = Mathf.Clamp(xRotation , -90f, 90f);

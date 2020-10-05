@@ -14,6 +14,9 @@ public class playermovement : MonoBehaviour
 	public GameObject bullet;
 	public Transform bulletpos;
 	
+	public Joystick joystick;
+	
+	
 	public float gravity = -9.81f;
 	public float jumpHeight = 4f;
 	
@@ -27,6 +30,34 @@ public class playermovement : MonoBehaviour
 	bool isGrounded;
     // Start is called before the first frame update
 	
+	
+	
+public void shoot(){
+			
+			
+			Instantiate(bullet,bulletpos.position, bulletpos.rotation);
+			GetComponent<AudioSource>().Play();
+			
+			
+}
+
+public void jump(){
+	
+	if( isGrounded){
+			
+			
+			velocity.y = Mathf.Sqrt(jumpHeight* -2f * gravity);
+			
+			
+			
+}
+	
+	
+}
+	
+		
+
+		
 	Vector3 velocity;
 
     // Update is called once per frame
@@ -44,29 +75,14 @@ public class playermovement : MonoBehaviour
 		
 		
 		//salto && isGrounded
-		if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
-			
-			
-			velocity.y = Mathf.Sqrt(jumpHeight* -2f * gravity);
-			
-			
-			
-		}
-		
-		
-			if(Input.GetKeyDown(KeyCode.Mouse0) ){
-			
-			
-			Instantiate(bullet,bulletpos.position, bulletpos.rotation);
-			GetComponent<AudioSource>().Play();
-			
-			
-		}
+	
 		
 		
 		
-        float x = Input.GetAxis("Horizontal");
-		float z = Input.GetAxis("Vertical");
+		
+		
+        float x = joystick.Horizontal;
+		float z = joystick.Vertical;
 		
 		
 		
