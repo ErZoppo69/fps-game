@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 635, y: 442}
   m_MaxSize: {x: 18005, y: 10021}
   vertical: 0
-  controlID: 4660
+  controlID: 1434
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -75,10 +75,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -193
-    m_HBaseRangeMax: 193
-    m_VBaseRangeMin: -225.5
-    m_VBaseRangeMax: 225.5
+    m_HBaseRangeMin: -154.40001
+    m_HBaseRangeMax: 154.40001
+    m_VBaseRangeMin: -180.40001
+    m_VBaseRangeMax: 180.40001
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 4661
+  controlID: 1410
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,8 +162,8 @@ MonoBehaviour:
     y: 0
     width: 387
     height: 223
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -207,9 +207,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 702.35986, y: 210.77013, z: -469.01825}
+    m_Target: {x: 736.08124, y: 213.951, z: -513.17096}
     speed: 2
-    m_Value: {x: 702.35986, y: 210.77013, z: -469.01825}
+    m_Value: {x: 736.08124, y: 213.951, z: -513.17096}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -259,9 +259,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.027669437, y: 0.47743246, z: 0.015044097, w: 0.87810385}
   m_Size:
-    m_Target: 2.3690205
+    m_Target: 0.90653443
     speed: 2
-    m_Value: 2.3690205
+    m_Value: 0.90653443
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 002e0000
     m_LastClickedID: 11776
-    m_ExpandedIDs: 00000000b83c0000ba3c000000ca9a3b
+    m_ExpandedIDs: 000000007c4f00007e4f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -366,7 +366,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b83c0000ba3c000000ca9a3b
+    m_ExpandedIDs: 000000007c4f00007e4f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bcb6ffffceb6ffff9ccbffff76faffff68fbffff3a550000
+      m_ExpandedIDs: e8f8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -659,20 +659,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/script
+    - Assets/script/playerscripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/script
+  - Assets/script/playerscripts
   m_LastFoldersGridSize: 64
   m_LastProjectPath: D:\fps github\fps-game\Burga Simultaor\Assets\FPS ER ZOPPO
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d83c0000
-    m_LastClickedID: 15576
-    m_ExpandedIDs: 00000000b83c0000ba3c000000ca9a3b
+    m_SelectedIDs: c44f0000
+    m_LastClickedID: 20420
+    m_ExpandedIDs: 000000007c4f00007e4f0000b64f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -700,7 +700,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b83c0000ba3c000000ca9a3b
+    m_ExpandedIDs: 000000007c4f00007e4f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,8 +725,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 3a550000
-    m_LastClickedInstanceID: 21818
+    m_SelectedInstanceIDs: e64f0000
+    m_LastClickedInstanceID: 20454
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 802d00001c280000902d0000842c000000000000c4290000a82a0000b28f0000f22b00008a7a000098830000f84b0000d84a0000f62a0000362a0000a04b0000485900004a2a000016280000763f0000784d00005e290000863a00008e270000d42d0000323b00001e470000166900001a690000162900005a38000072300000ce33000060470000
     m_RenameOverlay:

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class guns : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -10,9 +10,12 @@ public class NewBehaviourScript : MonoBehaviour
 
    class Gun{
    	
-	int power, range, bulletType
+	int power;
+	int range;
+	int bulletType;
 	GameObject bullet;
 	Transform bulletpos;
+	
 	
 	void Shoot(){
 		
@@ -20,7 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
 		
 		
 		Instantiate(bullet,bulletpos.position, bulletpos.rotation);
-		GetComponent<AudioSource>().Play();
+		
 		
 		
 		
