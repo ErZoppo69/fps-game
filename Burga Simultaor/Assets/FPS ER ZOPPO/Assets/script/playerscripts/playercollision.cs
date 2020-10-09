@@ -12,6 +12,8 @@ public int life = 30;
     // Start is called before the first frame update
 void OnCollisionEnter (Collision target)
 	   {
+	   
+	   	 Debug.Log(target.gameObject.name);
          if( target.gameObject.tag == ("enemy") ){
 		   
 		  life -=  5;
