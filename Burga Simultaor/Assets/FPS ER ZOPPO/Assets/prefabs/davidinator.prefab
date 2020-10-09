@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 825858723791039755}
   - component: {fileID: 825858723791039754}
   - component: {fileID: 825858723791039757}
-  - component: {fileID: 825858723791039756}
   - component: {fileID: 365940459116771261}
   m_Layer: 0
   m_Name: davideTron (3) 1
@@ -435,22 +434,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9926722, y: 1.3660896, z: 0.2000102}
   m_Center: {x: -0.01279852, y: 0.017161997, z: -0.000005089067}
---- !u!114 &825858723791039756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825858723791039759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421f50ed3571ede4bbeba02082f93f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  davide: 1
-  bullet: {fileID: 5902483805894692848, guid: 6cbe8c417bfc5cc4bb001464f3a3c231, type: 3}
-  bulletpos: {fileID: 866841517649585376}
-  delay: 0.3
 --- !u!54 &365940459116771261
 Rigidbody:
   m_ObjectHideFlags: 0
