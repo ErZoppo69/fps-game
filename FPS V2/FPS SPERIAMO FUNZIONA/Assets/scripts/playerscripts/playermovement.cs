@@ -80,10 +80,7 @@ public void jump(){
 		}
 		
 		
-		if( Input.GetKey(KeyCode.Mouse0)&& isPhone== 1){
-		   Instantiate(bullet,bulletpos.position, bulletpos.rotation);
-			GetComponent<AudioSource>().Play();
-		}	
+		
 			
 			
 			
