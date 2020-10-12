@@ -9,8 +9,8 @@ public class egirlai : MonoBehaviour
 
 	public CharacterController egirl;
 	public float speed = 10f;
-	public GameObject Move;
-	public Transform pos;
+	private GameObject Move;
+	private Transform pos;
 	public float shootSpeed = 300f;
 	public float x = 0.01f;
 	public float z = 0.01f;

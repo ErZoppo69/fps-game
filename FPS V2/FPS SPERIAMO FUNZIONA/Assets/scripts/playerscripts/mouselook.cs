@@ -45,8 +45,6 @@ public class mouselook : MonoBehaviour
 		}
       
 		
-		//Input.GetAxis("Mouse X");
-		//Input.GetAxis("Mouse Y");
 		
 		xRotation -=  mouseY;
 		xRotation = Mathf.Clamp(xRotation , -90f, 90f);
