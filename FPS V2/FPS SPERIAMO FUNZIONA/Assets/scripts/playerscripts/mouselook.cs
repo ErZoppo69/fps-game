@@ -16,6 +16,7 @@ public class mouselook : MonoBehaviour
 	private bool touchStart = false;
 	private Vector2 pointa;
 	private Vector2 pointb;
+	public int main = 0;
 	
 	float xRotation = 0f;
     // Start is called before the first frame update
@@ -45,7 +46,8 @@ public class mouselook : MonoBehaviour
 		}
       
 		
-		
+		if(main == 0){
+			
 		xRotation -=  mouseY;
 		xRotation = Mathf.Clamp(xRotation , -90f, 90f);
 		
@@ -53,6 +55,16 @@ public class mouselook : MonoBehaviour
 		transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 		
 		playerBody.Rotate(Vector3.up * mouseX);
+			
+			
+			
+		}else{
+			
+			
+			 Cursor.lockState = CursorLockMode.UnLocked;
+			
+		}
+
 		
 		
 		

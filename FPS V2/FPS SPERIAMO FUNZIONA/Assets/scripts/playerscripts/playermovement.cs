@@ -11,9 +11,17 @@ public class playermovement : MonoBehaviour
 	public CharacterController controller;
 	public float speed = 100f;
 	public string gunType;
+	public int escounter = 0;
 	
 	public GameObject bullet;
 	public Transform bulletpos;
+	
+	
+	public GameObject options;
+	public Transform optionpos;
+	
+	private GameObject SpawnedMenu;
+	
 	
 	public Joystick joystick;
 	
@@ -78,9 +86,25 @@ public void jump(){
 			
 			
 		}
+			
 		
+		if(Input.GetKeyDown(KeyCode.Escape) ){
 		
+			if( escounter == 0){ 
+			SpawnedMenu = Instantiate(options, optionpos.position, optionpos.rotation);
+			escounter += 1;
+			}else{
+				
+				Destroy(SpawnedMenu);
+			escounter = 0;
+			
+				
+			}
+			
+			
+		}
 		
+
 			
 			
 			

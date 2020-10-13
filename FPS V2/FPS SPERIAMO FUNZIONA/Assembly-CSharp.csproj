@@ -109,6 +109,7 @@
      <Compile Include="Assets\scripts\enemylook.cs" />
      <Compile Include="Assets\scripts\enemymove.cs" />
      <Compile Include="Assets\scripts\moveByTouch.cs" />
+     <Compile Include="Assets\scripts\options.cs" />
      <Compile Include="Assets\scripts\phoneCeck.cs" />
      <Compile Include="Assets\scripts\playerscripts\guns.cs" />
      <Compile Include="Assets\scripts\playerscripts\mouselook.cs" />
