@@ -47,6 +47,7 @@ public class mouselook : MonoBehaviour
       
 		
 		if(main == 0){
+		Cursor.lockState = CursorLockMode.Locked;
 			
 		xRotation -=  mouseY;
 		xRotation = Mathf.Clamp(xRotation , -90f, 90f);
@@ -61,7 +62,7 @@ public class mouselook : MonoBehaviour
 		}else{
 			
 			
-			 Cursor.lockState = CursorLockMode.UnLocked;
+			 Cursor.lockState = CursorLockMode.None;
 			
 		}
 

@@ -14,13 +14,13 @@ public int isPhone = 1;
 float timer = 0.0f;
 
 public int ammo  = 20;
-	
+public int main = 0;	
 
 void Update(){
 	
 	timer += Time.deltaTime;
 	
-    if(Input.GetKey(KeyCode.Mouse0)&& isPhone== 1 && ammo > 0)
+    if(Input.GetKey(KeyCode.Mouse0)&& isPhone== 1 && ammo > 0 && main == 0)
     {
 			if(timer > 0.5f){
 				

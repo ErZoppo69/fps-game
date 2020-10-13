@@ -12,6 +12,11 @@ public class playermovement : MonoBehaviour
 	public float speed = 100f;
 	public string gunType;
 	public int escounter = 0;
+	public int main = 0;
+	
+	//other scripts
+	public mouselook mousescript;
+	public guns gunscript;
 	
 	public GameObject bullet;
 	public Transform bulletpos;
@@ -93,10 +98,17 @@ public void jump(){
 			if( escounter == 0){ 
 			SpawnedMenu = Instantiate(options, optionpos.position, optionpos.rotation);
 			escounter += 1;
+			mousescript.main = 1;
+			gunscript.main = 1;
+			main = 1;
+			
 			}else{
 				
 				Destroy(SpawnedMenu);
 			escounter = 0;
+			mousescript.main = 0;
+			gunscript.main = 0;
+			main = 0;
 			
 				
 			}
@@ -142,7 +154,7 @@ public void jump(){
 		
 		
 		
-		
+		if(main == 0){
 		Vector3 move = transform.right*x + transform.forward * z;
 		
 		controller.Move(move*speed*Time.deltaTime);
@@ -150,6 +162,10 @@ public void jump(){
 		velocity.y += gravity* Time.deltaTime;
 		
 		controller.Move(velocity * Time.deltaTime);
+			
+			
+		}
+
 		
 		
 		

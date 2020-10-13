@@ -5348,6 +5348,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &238404749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 969619429245760629, guid: 0898da498384d614197892e2ec623b07,
+    type: 3}
+  m_PrefabInstance: {fileID: 969619428970610256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238404747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2bcb06c2e88ea47958c7bd7d6f2d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &239326930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7905,6 +7917,7 @@ MonoBehaviour:
   bulletpos: {fileID: 535205011}
   isPhone: 1
   ammo: 20
+  main: 0
 --- !u!1001 &323212419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58262,6 +58275,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 649782714664425337, guid: d0ab76a8eefa36242b2367afe08577b9,
         type: 3}
+    - target: {fileID: 969619428654185258, guid: 0898da498384d614197892e2ec623b07,
+        type: 3}
+      propertyPath: mousescript
+      value: 
+      objectReference: {fileID: 238404749}
+    - target: {fileID: 969619428654185258, guid: 0898da498384d614197892e2ec623b07,
+        type: 3}
+      propertyPath: gunscript
+      value: 
+      objectReference: {fileID: 321111418}
     - target: {fileID: 969619428654185259, guid: 0898da498384d614197892e2ec623b07,
         type: 3}
       propertyPath: m_LocalPosition.x
