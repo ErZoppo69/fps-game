@@ -102,6 +102,7 @@
      <Compile Include="Assets\scripts\bullEt.cs" />
      <Compile Include="Assets\scripts\button.cs" />
      <Compile Include="Assets\scripts\charactercontrollerpc.cs" />
+     <Compile Include="Assets\scripts\collis.cs" />
      <Compile Include="Assets\scripts\collison.cs" />
      <Compile Include="Assets\scripts\egirlai.cs" />
      <Compile Include="Assets\scripts\enemyapi.cs" />
