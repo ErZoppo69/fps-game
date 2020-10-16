@@ -11,6 +11,8 @@ public class guns : MonoBehaviour
 	
 public GameObject bullet;
 public Transform bulletpos;
+public GameObject grenade;
+public Transform grenadepos;
 public int isPhone = 1;
 float timer = 0.0f;
 public TextMeshProUGUI textmeshPro ;
@@ -44,6 +46,22 @@ void Update(){
 			
 			
 		}
+		
+		
+			if(Input.GetKey(KeyCode.G)){
+			
+			Instantiate(grenade,grenadepos.position, grenadepos.rotation);
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
     }
 }	
 	
